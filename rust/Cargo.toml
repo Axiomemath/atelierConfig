@@ -1,5 +1,10 @@
 [package]
 # TODO
+name = "rust"
+version = "0.1.0"
+edition = "2018"
 
 [dependencies]
 # TODO
+reqwest = "0.11.5"
+clap = "3.0.0"

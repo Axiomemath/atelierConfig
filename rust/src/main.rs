@@ -1,6 +1,9 @@
 use std::sync::Arc;
+use reqwest;
+
 
 use clap::Parser;
+
 use cli::Args;
 use client::HttpPingClient;
 use exec::Executor;
