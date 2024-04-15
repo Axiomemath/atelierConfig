@@ -1,5 +1,4 @@
 use std::sync::Arc;
-use reqwest;
 
 
 use clap::Parser;
@@ -24,5 +23,7 @@ fn main() {
     let executor = Executor::new(client, handler, logger);
 
     let args = Args::parse();
+    println!("{}", args.url);
+    println!("{}", args.tries);
     executor.execute(&args.url, args.tries);
 }
