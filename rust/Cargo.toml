@@ -1,10 +1,14 @@
 [package]
-# TODO
-name = "rust"
+
+name = "ping"
+description = "A nice little PING tool."
+authors = ["Nice people Inc."]
 version = "0.1.0"
-edition = "2018"
+edition = "2021"
+license = "MIT"
+
 
 [dependencies]
-# TODO
+
 reqwest = { version = "0.12.3", features = ["blocking"] }
 clap = { version = "4.5.4", features = ["derive"] }

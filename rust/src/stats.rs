@@ -78,7 +78,7 @@ mod tests {
     }
 
     #[test]
-    fn given_both_fails_and_successes_has_the_corect_success_rate() {
+    fn given_both_fails_and_successes_has_the_correct_success_rate() {
         let mut stats = PingStats::new();
         stats.add_fail();
         stats.add_success();
@@ -88,7 +88,7 @@ mod tests {
     }
 
     #[test]
-    fn given_both_fails_and_successes_has_the_corect_total() {
+    fn given_both_fails_and_successes_has_the_correct_total() {
         let mut stats = PingStats::new();
         stats.add_fail();
         stats.add_success();

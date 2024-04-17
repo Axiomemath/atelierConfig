@@ -1,6 +1,5 @@
 use std::sync::Arc;
 
-
 use clap::Parser;
 
 use cli::Args;
@@ -23,7 +22,5 @@ fn main() {
     let executor = Executor::new(client, handler, logger);
 
     let args = Args::parse();
-    println!("{}", args.url);
-    println!("{}", args.tries);
     executor.execute(&args.url, args.tries);
 }
